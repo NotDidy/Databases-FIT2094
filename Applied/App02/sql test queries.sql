@@ -10,3 +10,5 @@ where studaddress like '%Moorabbin';
 select studfname, studlname 
 from student 
 where studaddress like '%Moorabbin';
+
+DROP TABLE student CASCADE CONSTRAINTS PURGE;
