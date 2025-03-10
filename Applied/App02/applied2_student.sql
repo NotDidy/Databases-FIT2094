@@ -2,9 +2,9 @@
 Databases Applied 2
 applied2_student.sql
 
-student id:
-student name:
-last modified date:
+student id: 33523061
+student name: Muhammad Johan Arief
+last modified date: 10/3/2025
 
 */
 
