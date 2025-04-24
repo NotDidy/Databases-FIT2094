@@ -42,6 +42,22 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="order_no1" id="42B780EA-77D1-884E-7A39-DB60B424C079">
+<createdBy>Johan</createdBy>
+<createdTime>2025-04-07 03:11:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[order number]]></commentInRDBMS>
+<generatorID>2E2F54C1-09DF-5FE1-C585-1E33EE9879DD</generatorID>
+<ownerDesignName>custorders_database</ownerDesignName>
+<engineerTo>
+<item key="06350CBA-9A4B-3773-19B1-84486C211B9B" value="true"/>
+</engineerTo>
+<referedAttribute>16B26BDA-EF3A-A18E-9788-E0B8B25EAFEE</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="B24A9DF9-6CC3-B0D2-1B98-0BABC550796E" name="ORDERS PK">

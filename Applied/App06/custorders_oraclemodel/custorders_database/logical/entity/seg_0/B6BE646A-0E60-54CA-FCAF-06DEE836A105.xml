@@ -23,10 +23,16 @@
 <engineerTo>
 <item key="06350CBA-9A4B-3773-19B1-84486C211B9B" value="true"/>
 </engineerTo>
+<constraintName>chk_custlevel</constraintName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>7</dataTypePrecision>
+<listOfValues>
+<valueDef value="B" description="Bronze"/>
+<valueDef value="G" description="Gold"/>
+<valueDef value="S" description="Silver"/>
+</listOfValues>
 <ownDataTypeParameters>,7,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="cust_name" id="132722EF-8A81-67D1-E181-D7E8BC4805D8">
