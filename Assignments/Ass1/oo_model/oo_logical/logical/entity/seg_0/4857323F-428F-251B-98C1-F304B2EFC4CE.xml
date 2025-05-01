@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4857323F-428F-251B-98C1-F304B2EFC4CE" name="ADDRESS">
+<createdBy>Johan</createdBy>
+<createdTime>2025-05-01 18:26:01 UTC</createdTime>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="987262D9-4846-2809-9182-3B60229B244B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="pass_street" id="1DBE16D7-D4AB-AB2D-8348-13D81A1AF0A7">
+<createdBy>Johan</createdBy>
+<createdTime>2025-05-01 18:26:12 UTC</createdTime>
+<comment><![CDATA[Street name of passenger's address]]></comment>
+<commentInRDBMS><![CDATA[Street name of passenger's address]]></commentInRDBMS>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="987262D9-4846-2809-9182-3B60229B244B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pass_town" id="ED4315A7-C56E-A8FC-19F1-2A3C30F496C9">
+<createdBy>Johan</createdBy>
+<createdTime>2025-05-01 18:26:59 UTC</createdTime>
+<comment><![CDATA[Town name of passenger's address]]></comment>
+<commentInRDBMS><![CDATA[Town name of passenger's address]]></commentInRDBMS>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="987262D9-4846-2809-9182-3B60229B244B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pass_postcode" id="1815BC70-DC01-4A05-CE17-07864E2915BA">
+<createdBy>Johan</createdBy>
+<createdTime>2025-05-01 18:28:02 UTC</createdTime>
+<comment><![CDATA[Postcode of passenger's address]]></comment>
+<commentInRDBMS><![CDATA[Postcode of passenger's address]]></commentInRDBMS>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="987262D9-4846-2809-9182-3B60229B244B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pass_country" id="B6C08E0E-3560-585A-CA31-8B4C320DEDCE">
+<createdBy>Johan</createdBy>
+<createdTime>2025-05-01 18:28:03 UTC</createdTime>
+<comment><![CDATA[Country of passenger's address]]></comment>
+<commentInRDBMS><![CDATA[Country of passenger's address]]></commentInRDBMS>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="987262D9-4846-2809-9182-3B60229B244B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

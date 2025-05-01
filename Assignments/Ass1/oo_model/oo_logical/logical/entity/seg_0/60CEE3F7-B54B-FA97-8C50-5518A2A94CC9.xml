@@ -1,0 +1,33 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="60CEE3F7-B54B-FA97-8C50-5518A2A94CC9" name="MANIFEST">
+<createdBy>Johan</createdBy>
+<createdTime>2025-05-01 18:18:30 UTC</createdTime>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="987262D9-4846-2809-9182-3B60229B244B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="board_time" id="2CA8E73F-8E3D-D5AF-EFD6-73376FC0BD84">
+<createdBy>Johan</createdBy>
+<createdTime>2025-05-01 18:18:41 UTC</createdTime>
+<comment><![CDATA[Time passenger boarded the ship for the cruise]]></comment>
+<commentInRDBMS><![CDATA[Time passenger boarded the ship for the cruise]]></commentInRDBMS>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="987262D9-4846-2809-9182-3B60229B244B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

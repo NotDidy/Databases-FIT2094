@@ -1,0 +1,120 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E13FA3FF-1B5F-6068-5974-27FDF2AF3E6F" name="PASSENGERv1">
+<createdBy>Johan</createdBy>
+<createdTime>2025-05-01 18:25:17 UTC</createdTime>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="987262D9-4846-2809-9182-3B60229B244B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="pass_id" id="219601E2-70F4-7160-0646-301A361C0E42">
+<createdBy>Johan</createdBy>
+<createdTime>2025-05-01 18:25:17 UTC</createdTime>
+<comment><![CDATA[Identifier for each passenger]]></comment>
+<commentInRDBMS><![CDATA[Identifier for each passenger]]></commentInRDBMS>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="987262D9-4846-2809-9182-3B60229B244B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="first_name" id="2F18B31B-14EC-B24B-5773-F485D0BAF059">
+<createdBy>Johan</createdBy>
+<createdTime>2025-05-01 18:25:17 UTC</createdTime>
+<comment><![CDATA[First name of passenger]]></comment>
+<commentInRDBMS><![CDATA[First name of passenger]]></commentInRDBMS>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="987262D9-4846-2809-9182-3B60229B244B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="last_name" id="077BCB98-A9CB-A3D4-C636-CB47BED9C356">
+<createdBy>Johan</createdBy>
+<createdTime>2025-05-01 18:25:17 UTC</createdTime>
+<comment><![CDATA[Last name of passenger]]></comment>
+<commentInRDBMS><![CDATA[Last name of passenger]]></commentInRDBMS>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="987262D9-4846-2809-9182-3B60229B244B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="gender" id="8D00E004-DC56-D0AD-A308-DB54156451D0">
+<createdBy>Johan</createdBy>
+<createdTime>2025-05-01 18:25:17 UTC</createdTime>
+<comment><![CDATA[Gender of passenger]]></comment>
+<commentInRDBMS><![CDATA[Gender of passenger]]></commentInRDBMS>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="987262D9-4846-2809-9182-3B60229B244B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="date_of_birth" id="36998FB0-1BD4-FE88-9C35-4CDFBD570F59">
+<createdBy>Johan</createdBy>
+<createdTime>2025-05-01 18:25:17 UTC</createdTime>
+<comment><![CDATA[Date of birth of passenger]]></comment>
+<commentInRDBMS><![CDATA[Date of birth of passenger]]></commentInRDBMS>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="987262D9-4846-2809-9182-3B60229B244B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tel_no" id="5DEE80E7-25FB-EDBB-3917-5BB21177C4BD">
+<createdBy>Johan</createdBy>
+<createdTime>2025-05-01 18:25:17 UTC</createdTime>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="987262D9-4846-2809-9182-3B60229B244B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B4EDA832-532E-FFF1-33A0-ADC6C8AF9B24" name="PASSENGER PK">
+<createdBy>Johan</createdBy>
+<createdTime>2025-05-01 18:25:17 UTC</createdTime>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="987262D9-4846-2809-9182-3B60229B244B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>219601E2-70F4-7160-0646-301A361C0E42</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
