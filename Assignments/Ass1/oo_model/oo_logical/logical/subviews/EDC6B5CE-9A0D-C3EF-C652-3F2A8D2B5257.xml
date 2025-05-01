@@ -5,12 +5,24 @@
 <createdTime>2025-05-01 17:05:45 UTC</createdTime>
 <autoRoute>false</autoRoute>
 <boxInbox>true</boxInbox>
-<showLegend>false</showLegend>
-<showLabels>false</showLabels>
+<showLegend>true</showLegend>
+<showLabels>true</showLabels>
 <showRelAttributes>false</showRelAttributes>
 <gridEnabled>false</gridEnabled>
 <showGrid>false</showGrid>
 <diagramColor>-1</diagramColor>
 <display>false</display>
-<notation>1</notation>
+<notation>2</notation>
+<showAllDetails>false</showAllDetails>
+<showElements>true</showElements>
+<objectViews>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="2ABD2CAC-3AE3-B7D1-E80B-9263FB75E14C" otype="Entity" vid="86C50574-14ED-7122-250D-D7BDB879E5DE">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="172" y="192" width="175" height="108"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVLegend" oid="75455D91-4684-ACF1-2811-9B6855D0367F" otype="Legend" vid="D33CB976-AAAC-AD6E-C5B8-C115AD79AD97">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="10" y="10" width="232" height="135"/>
+</OView>
+</objectViews>
 </Diagram>

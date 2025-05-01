@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2ABD2CAC-3AE3-B7D1-E80B-9263FB75E14C" name="OPERATOR">
+<createdBy>Johan</createdBy>
+<createdTime>2025-05-01 17:42:32 UTC</createdTime>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="987262D9-4846-2809-9182-3B60229B244B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="op_id" id="D343E35E-80E7-A1BA-90AB-92E6496015CB">
+<createdBy>Johan</createdBy>
+<createdTime>2025-05-01 17:42:46 UTC</createdTime>
+<comment><![CDATA[Operator ID that uniquely identifies the operator]]></comment>
+<commentInRDBMS><![CDATA[Operator ID that uniquely identifies the operator]]></commentInRDBMS>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="987262D9-4846-2809-9182-3B60229B244B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5 CHAR</dataTypeSize>
+<ownDataTypeParameters>5 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="company_name" id="A3D7A836-C3BD-5048-95F1-6C920F62BD77">
+<createdBy>Johan</createdBy>
+<createdTime>2025-05-01 17:43:55 UTC</createdTime>
+<comment><![CDATA[Company that the operator works for]]></comment>
+<commentInRDBMS><![CDATA[Company that the operator works for]]></commentInRDBMS>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="987262D9-4846-2809-9182-3B60229B244B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ceo_name" id="68F77D53-40CE-D85F-33C1-4B02F790A398">
+<createdBy>Johan</createdBy>
+<createdTime>2025-05-01 17:45:51 UTC</createdTime>
+<comment><![CDATA[Chief Executive Officer's Name]]></comment>
+<commentInRDBMS><![CDATA[Chief Executive Officer's Name]]></commentInRDBMS>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="987262D9-4846-2809-9182-3B60229B244B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="42DEA06B-F52F-8916-F4EF-ABE187692155" name="OPERATOR PK">
+<createdBy>Johan</createdBy>
+<createdTime>2025-05-01 17:43:09 UTC</createdTime>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="987262D9-4846-2809-9182-3B60229B244B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>D343E35E-80E7-A1BA-90AB-92E6496015CB</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
