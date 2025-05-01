@@ -26,8 +26,9 @@
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="cab_no" id="B5A88AB3-AC39-D9C0-3D9E-1FD640D83E4D">
 <createdBy>Johan</createdBy>
@@ -97,6 +98,21 @@
 <dataTypePrecision>7</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="manifest_no" id="8A4C8C42-0F00-8BA0-5EF3-37A8F13ABBF7">
+<createdBy>Johan</createdBy>
+<createdTime>2025-05-01 19:50:41 UTC</createdTime>
+<comment><![CDATA[Unique identifier for each row within the manifest (Surrogate Key)]]></comment>
+<commentInRDBMS><![CDATA[Unique identifier for each row within the manifest (Surrogate Key)]]></commentInRDBMS>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="987262D9-4846-2809-9182-3B60229B244B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="5D9D9F31-5CDB-A3EB-8F3A-348543D03D3C" name="MANIFEST PK">
@@ -107,6 +123,25 @@
 <item key="987262D9-4846-2809-9182-3B60229B244B" value="true"/>
 </engineerTo>
 <pk>true</pk>
+<usedAttributes>
+<attributeRef>8A4C8C42-0F00-8BA0-5EF3-37A8F13ABBF7</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="5EE0DE57-B325-83F1-1168-4DDC6E1AA05B" name="MANIFEST_NK">
+<createdBy>Johan</createdBy>
+<createdTime>2025-05-01 19:54:15 UTC</createdTime>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="987262D9-4846-2809-9182-3B60229B244B" value="true"/>
+</engineerTo>
+<newElementsIDs>FE05E859-DA72-772D-C7A2-0FEA44229E59,912CD3F5-5274-193D-9A50-D98E55AC2B41,9A8D208C-877A-33EB-FA7F-0D1B3A1D34A1,2CA8E73F-8E3D-D5AF-EFD6-73376FC0BD84</newElementsIDs>
+<usedAttributes>
+<attributeRef>B5A88AB3-AC39-D9C0-3D9E-1FD640D83E4D</attributeRef>
+<attributeRef>48B8FCA0-5249-29CB-90AA-454D4259BD20</attributeRef>
+<attributeRef>DD19741A-1393-BA6E-403C-89CEDF717FD3</attributeRef>
+<attributeRef>807386AA-01D1-ED76-2F77-9B3A6E593F11</attributeRef>
+<attributeRef>2CA8E73F-8E3D-D5AF-EFD6-73376FC0BD84</attributeRef>
+</usedAttributes>
 </identifier>
 </identifiers>
 </Entity>

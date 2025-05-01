@@ -52,10 +52,17 @@
 <engineerTo>
 <item key="987262D9-4846-2809-9182-3B60229B244B" value="true"/>
 </engineerTo>
+<constraintName>chk_cabin_class</constraintName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>10</dataTypeSize>
+<listOfValues>
+<valueDef value="Balcony" description="Balcony"/>
+<valueDef value="Interior" description="Interior"/>
+<valueDef value="Ocean" description="Ocean view"/>
+<valueDef value="Suite" description="Suite"/>
+</listOfValues>
 <ownDataTypeParameters>10,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="ship_code" id="3318223E-EE4C-1AC6-C1EE-CBF315CA7FB6">
