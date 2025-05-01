@@ -1,0 +1,139 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B2A87BB2-63CD-64C2-CC86-11AC662C89D2" name="PASSENGER">
+<createdBy>Johan</createdBy>
+<createdTime>2025-05-01 20:24:52 UTC</createdTime>
+<generatorID>CAF9BF8D-2100-5EEE-21BC-F2420D78EA32</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="pass_id" id="39DA14A0-8686-BE18-2797-8416883CE328">
+<createdBy>Johan</createdBy>
+<createdTime>2025-05-01 20:24:52 UTC</createdTime>
+<comment><![CDATA[Identifier for each passenger]]></comment>
+<commentInRDBMS><![CDATA[Identifier for each passenger]]></commentInRDBMS>
+<generatorID>9C19C6F2-D205-198B-7081-E78EF54957DC</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="first_name" id="CAA6BDC1-E32C-6819-A6C1-C01CF1150E33">
+<createdBy>Johan</createdBy>
+<createdTime>2025-05-01 20:24:52 UTC</createdTime>
+<comment><![CDATA[First name of passenger]]></comment>
+<commentInRDBMS><![CDATA[First name of passenger]]></commentInRDBMS>
+<generatorID>D232161B-1BCD-9452-3A96-5E5FE53BCC24</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="last_name" id="20DC1E6F-BE4F-6A9A-C6F5-7A4040371E1A">
+<createdBy>Johan</createdBy>
+<createdTime>2025-05-01 20:24:52 UTC</createdTime>
+<comment><![CDATA[Last name of passenger]]></comment>
+<commentInRDBMS><![CDATA[Last name of passenger]]></commentInRDBMS>
+<generatorID>5E241AEF-4F68-D10D-62CE-CF6F85F76671</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="gender" id="90157E40-CD7E-C1E4-DAF4-5A2A139A2621">
+<createdBy>Johan</createdBy>
+<createdTime>2025-05-01 20:24:52 UTC</createdTime>
+<comment><![CDATA[Gender of passenger]]></comment>
+<commentInRDBMS><![CDATA[Gender of passenger]]></commentInRDBMS>
+<generatorID>A1250688-B932-EAF7-E7EF-D4EAC1224ACE</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date_of_birth" id="0E953F45-2DF8-BE4D-37BD-B86F61E8CA9B">
+<createdBy>Johan</createdBy>
+<createdTime>2025-05-01 20:24:52 UTC</createdTime>
+<comment><![CDATA[Date of birth of passenger]]></comment>
+<commentInRDBMS><![CDATA[Date of birth of passenger]]></commentInRDBMS>
+<generatorID>BE6B48AC-B6B3-F5BC-8936-D210CD982284</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tel_no" id="08F22DF8-031A-1050-AED2-3BC405EFE1FE">
+<createdBy>Johan</createdBy>
+<createdTime>2025-05-01 20:24:52 UTC</createdTime>
+<comment><![CDATA[Telephone number of passenger]]></comment>
+<commentInRDBMS><![CDATA[Telephone number of passenger]]></commentInRDBMS>
+<generatorID>03409925-784D-9048-7B5E-4040A7A6A32C</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="minor_status" id="ACB925BE-C855-91F3-D72A-AD8656740C7D">
+<createdBy>Johan</createdBy>
+<createdTime>2025-05-01 20:24:52 UTC</createdTime>
+<comment><![CDATA[Status of which the character is a minor or not]]></comment>
+<commentInRDBMS><![CDATA[Status of which the character is a minor or not]]></commentInRDBMS>
+<generatorID>7EA546F6-8EBF-72DA-4FE5-CA6A4F0F91A3</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3 CHAR</dataTypeSize>
+<ownDataTypeParameters>3 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="guardian_id" id="154CEE36-B2AA-3C67-CFD9-F28F104D963E">
+<createdBy>Johan</createdBy>
+<createdTime>2025-05-01 20:24:52 UTC</createdTime>
+<comment><![CDATA[Guardian ID (should the passenger be a minor)]]></comment>
+<commentInRDBMS><![CDATA[Guardian ID (should the passenger be a minor)]]></commentInRDBMS>
+<generatorID>1757BA4A-61DE-464A-AEAE-34C23759179F</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9AD5C45B-B52F-6A06-2771-65F97A2ECB77" name="PASSENGER_PK">
+<createdBy>Johan</createdBy>
+<createdTime>2025-05-01 20:24:52 UTC</createdTime>
+<generatorID>61577A6E-17AC-E79C-638C-CC282A096528</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="39DA14A0-8686-BE18-2797-8416883CE328"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

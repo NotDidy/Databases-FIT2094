@@ -1,0 +1,121 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7194E4FD-516C-E3DB-BC39-CB2916C0FB72" name="CRUISE">
+<createdBy>Johan</createdBy>
+<createdTime>2025-05-01 20:24:52 UTC</createdTime>
+<generatorID>EB5413FC-9DEA-4CB1-D039-E67E09236EE9</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cruise_id" id="8096E1EF-5DCA-11C1-E683-23EAA3EF99BB">
+<createdBy>Johan</createdBy>
+<createdTime>2025-05-01 20:24:52 UTC</createdTime>
+<comment><![CDATA[Unique identifier for all different types of cruises]]></comment>
+<commentInRDBMS><![CDATA[Unique identifier for all different types of cruises]]></commentInRDBMS>
+<generatorID>B61C13B7-6F3F-5C69-3365-045957C05980</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="description" id="CC43346A-6A26-A6AD-F92B-FDFDC92ABFF3">
+<createdBy>Johan</createdBy>
+<createdTime>2025-05-01 20:24:52 UTC</createdTime>
+<comment><![CDATA[Description of the cruise]]></comment>
+<commentInRDBMS><![CDATA[Description of the cruise]]></commentInRDBMS>
+<generatorID>7D866AFA-103B-3E29-3554-D8E17BE87FB2</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="depart_date" id="B565F219-6177-FFE9-1363-4BC738A94C85">
+<createdBy>Johan</createdBy>
+<createdTime>2025-05-01 20:24:52 UTC</createdTime>
+<comment><![CDATA[Departing date for the cruise]]></comment>
+<commentInRDBMS><![CDATA[Departing date for the cruise]]></commentInRDBMS>
+<generatorID>E7DE7C22-EE70-B7B3-C470-0936768994E9</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ship_code" id="270443A6-E366-B4E7-3040-AC74EE49D189">
+<createdBy>Johan</createdBy>
+<createdTime>2025-05-01 20:24:52 UTC</createdTime>
+<comment><![CDATA[Unique Identifier for ship]]></comment>
+<commentInRDBMS><![CDATA[Unique Identifier for ship]]></commentInRDBMS>
+<generatorID>7352B760-0078-AC49-E8D8-37F2D72DC440</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AD89616F-270C-A9A6-CB4F-40CCF409D0E8" referredColumn="AD8A8832-E3BD-6BF5-DD8E-D87D0055ED3E"/>
+</associations>
+</Column>
+<Column name="ship_name" id="9CE7A3E6-5934-89EA-5A7A-9F64D5760D3A">
+<createdBy>Johan</createdBy>
+<createdTime>2025-05-01 20:24:52 UTC</createdTime>
+<comment><![CDATA[Ship name]]></comment>
+<commentInRDBMS><![CDATA[Ship name]]></commentInRDBMS>
+<generatorID>50F81C6C-CB67-CA06-E0AB-933832ABB028</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3099ECDB-3067-F7FF-BA27-468692CA045A" name="CRUISE_PK">
+<createdBy>Johan</createdBy>
+<createdTime>2025-05-01 20:24:52 UTC</createdTime>
+<generatorID>CA2C4B08-12C8-3117-A3D2-C8971058D9CE</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8096E1EF-5DCA-11C1-E683-23EAA3EF99BB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4ADB68D1-1FA6-BA5F-0B7A-2D4CC6FFBE6D" name="CRUISE__IDX">
+<createdBy>Johan</createdBy>
+<createdTime>2025-05-01 20:24:52 UTC</createdTime>
+<ownerDesignName>oo_logical</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>DABAE40D-7DD3-1B07-5D03-F80B4F226EC8</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="270443A6-E366-B4E7-3040-AC74EE49D189"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C8B812BF-D57D-79D0-6E59-9564E234E8BC" name="ship_cruise_fk">
+<createdBy>Johan</createdBy>
+<createdTime>2025-05-01 20:24:52 UTC</createdTime>
+<generatorID>DABAE40D-7DD3-1B07-5D03-F80B4F226EC8</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="270443A6-E366-B4E7-3040-AC74EE49D189"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

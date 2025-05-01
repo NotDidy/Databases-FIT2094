@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
 <Diagram class="oracle.dbtools.crest.swingui.datatypes.DPVDataTypes" id="6C22B208-9D7C-467A-BF89-15DAF5078452">
-<createdBy>Johan</createdBy>
-<modifiedBy>Johan</modifiedBy>
+<createdBy>Muhammad Johan Arief bin Muliadee</createdBy>
+<modifiedBy>Muhammad Johan Arief bin Muliadee</modifiedBy>
 <createdTime>2025-05-01 16:42:08 UTC</createdTime>
 <autoRoute>false</autoRoute>
 <boxInbox>true</boxInbox>
@@ -13,6 +13,10 @@
 <diagramColor>-1</diagramColor>
 <display>false</display>
 <notation>1</notation>
+<propertyMap>
+<property name="Name" value="Muhammad Johan Arief bin Muliadee"/>
+<property name="Student ID" value="33523061"/>
+</propertyMap>
 <objectViews>
 <OView class="oracle.dbtools.crest.swingui.datatypes.TVStructuredType" oid="47E390DE-0671-C4B1-8428-0F45CBEE18F8" otype="StructuredType" vid="164B2D88-E7B6-6BCF-3C1C-BD248F496503">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>

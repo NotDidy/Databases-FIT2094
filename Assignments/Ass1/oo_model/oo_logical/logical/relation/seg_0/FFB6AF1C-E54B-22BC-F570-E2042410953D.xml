@@ -10,7 +10,7 @@
 <identifying>false</identifying>
 <nameOnSource>operates</nameOnSource>
 <nameOnTarget> </nameOnTarget>
-<optionalSource>true</optionalSource>
+<optionalSource>false</optionalSource>
 <optionalTarget>false</optionalTarget>
 <sourceCardinality>1</sourceCardinality>
 <sourceEntity>2ABD2CAC-3AE3-B7D1-E80B-9263FB75E14C</sourceEntity>

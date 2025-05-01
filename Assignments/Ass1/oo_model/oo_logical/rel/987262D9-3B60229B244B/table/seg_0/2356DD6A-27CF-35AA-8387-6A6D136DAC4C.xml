@@ -1,0 +1,68 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2356DD6A-27CF-35AA-8387-6A6D136DAC4C" name="OPERATOR">
+<createdBy>Johan</createdBy>
+<createdTime>2025-05-01 20:24:52 UTC</createdTime>
+<generatorID>2ABD2CAC-3AE3-B7D1-E80B-9263FB75E14C</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="op_id" id="D37C2F4B-13BB-1907-8B7C-58D194127EC9">
+<createdBy>Johan</createdBy>
+<createdTime>2025-05-01 20:24:52 UTC</createdTime>
+<comment><![CDATA[Operator ID that uniquely identifies the operator]]></comment>
+<commentInRDBMS><![CDATA[Operator ID that uniquely identifies the operator]]></commentInRDBMS>
+<generatorID>D343E35E-80E7-A1BA-90AB-92E6496015CB</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5 CHAR</dataTypeSize>
+<ownDataTypeParameters>5 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="company_name" id="6CC913C6-2C2C-3EFA-E3E8-49116D6D97D4">
+<createdBy>Johan</createdBy>
+<createdTime>2025-05-01 20:24:52 UTC</createdTime>
+<comment><![CDATA[Company that the operator works for]]></comment>
+<commentInRDBMS><![CDATA[Company that the operator works for]]></commentInRDBMS>
+<generatorID>A3D7A836-C3BD-5048-95F1-6C920F62BD77</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ceo_name" id="1896BA67-9DF5-F898-663C-7CF2C9DC4DE6">
+<createdBy>Johan</createdBy>
+<createdTime>2025-05-01 20:24:52 UTC</createdTime>
+<comment><![CDATA[Chief Executive Officer's Name]]></comment>
+<commentInRDBMS><![CDATA[Chief Executive Officer's Name]]></commentInRDBMS>
+<generatorID>68F77D53-40CE-D85F-33C1-4B02F790A398</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="53E1107E-AE22-65BA-C9AD-22B7BE8564CE" name="OPERATOR_PK">
+<createdBy>Johan</createdBy>
+<createdTime>2025-05-01 20:24:52 UTC</createdTime>
+<generatorID>42DEA06B-F52F-8916-F4EF-ABE187692155</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D37C2F4B-13BB-1907-8B7C-58D194127EC9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

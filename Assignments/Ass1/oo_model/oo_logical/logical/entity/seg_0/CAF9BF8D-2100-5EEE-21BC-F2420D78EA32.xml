@@ -92,6 +92,8 @@
 <Attribute name="tel_no" id="03409925-784D-9048-7B5E-4040A7A6A32C">
 <createdBy>Johan</createdBy>
 <createdTime>2025-05-01 18:22:47 UTC</createdTime>
+<comment><![CDATA[Telephone number of passenger]]></comment>
+<commentInRDBMS><![CDATA[Telephone number of passenger]]></commentInRDBMS>
 <ownerDesignName>oo_logical</ownerDesignName>
 <engineerTo>
 <item key="987262D9-4846-2809-9182-3B60229B244B" value="true"/>

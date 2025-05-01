@@ -1,0 +1,111 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="73ED947F-8055-240D-BBEE-753E25AD7491" name="ADDRESS">
+<createdBy>Johan</createdBy>
+<createdTime>2025-05-01 20:24:52 UTC</createdTime>
+<generatorID>4857323F-428F-251B-98C1-F304B2EFC4CE</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="pass_street" id="EB0A896D-C1CF-11C2-A163-54C964BFA3A1">
+<createdBy>Johan</createdBy>
+<createdTime>2025-05-01 20:24:52 UTC</createdTime>
+<comment><![CDATA[Street name of passenger's address]]></comment>
+<commentInRDBMS><![CDATA[Street name of passengers address]]></commentInRDBMS>
+<generatorID>1DBE16D7-D4AB-AB2D-8348-13D81A1AF0A7</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pass_town" id="4952CC08-6EAE-03D9-383D-50AB74B74CA8">
+<createdBy>Johan</createdBy>
+<createdTime>2025-05-01 20:24:52 UTC</createdTime>
+<comment><![CDATA[Town name of passenger's address]]></comment>
+<commentInRDBMS><![CDATA[Town name of passengers address]]></commentInRDBMS>
+<generatorID>ED4315A7-C56E-A8FC-19F1-2A3C30F496C9</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pass_postcode" id="D7B4E639-818F-89FB-FDE5-6D8CB2AFD7F8">
+<createdBy>Johan</createdBy>
+<createdTime>2025-05-01 20:24:52 UTC</createdTime>
+<comment><![CDATA[Postcode of passenger's address]]></comment>
+<commentInRDBMS><![CDATA[Postcode of passengers address]]></commentInRDBMS>
+<generatorID>1815BC70-DC01-4A05-CE17-07864E2915BA</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pass_country" id="2C5146A4-F03A-23AC-BBCC-B69B9BADB552">
+<createdBy>Johan</createdBy>
+<createdTime>2025-05-01 20:24:52 UTC</createdTime>
+<comment><![CDATA[Country of passenger's address]]></comment>
+<commentInRDBMS><![CDATA[Country of passengers address]]></commentInRDBMS>
+<generatorID>B6C08E0E-3560-585A-CA31-8B4C320DEDCE</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pass_id" id="98F30AB0-06CB-2952-FE76-D6979B712324">
+<createdBy>Johan</createdBy>
+<createdTime>2025-05-01 20:24:52 UTC</createdTime>
+<comment><![CDATA[Identifier for each passenger]]></comment>
+<commentInRDBMS><![CDATA[Identifier for each passenger]]></commentInRDBMS>
+<generatorID>4FFA54D3-28E5-0308-A09A-62C0F0C79494</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9C9F4831-7088-5048-66C3-8E22B2D9091F" referredColumn="39DA14A0-8686-BE18-2797-8416883CE328"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7C22D510-5ED3-0479-15EF-42751D3C7DEB" name="ADDRESS_PK">
+<createdBy>Johan</createdBy>
+<createdTime>2025-05-01 20:24:52 UTC</createdTime>
+<generatorID>21C068ED-C78B-A480-C42A-D5BFB3C6220C</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="98F30AB0-06CB-2952-FE76-D6979B712324"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8FA9EDA2-71C3-439B-BF39-6E19608F659C" name="passenger_address_fk">
+<createdBy>Johan</createdBy>
+<createdTime>2025-05-01 20:24:52 UTC</createdTime>
+<generatorID>BB5A5F0A-8CDD-86B9-5024-FF04C98D7D87</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="98F30AB0-06CB-2952-FE76-D6979B712324"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

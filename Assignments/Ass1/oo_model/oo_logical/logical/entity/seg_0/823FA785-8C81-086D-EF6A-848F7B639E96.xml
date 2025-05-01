@@ -48,6 +48,8 @@
 <Attribute name="cab_class" id="4A5BFB9B-6933-F6D9-8DCE-93BCB83ECAA5">
 <createdBy>Johan</createdBy>
 <createdTime>2025-05-01 18:02:23 UTC</createdTime>
+<comment><![CDATA[Type of cabin]]></comment>
+<commentInRDBMS><![CDATA[Type of cabin]]></commentInRDBMS>
 <ownerDesignName>oo_logical</ownerDesignName>
 <engineerTo>
 <item key="987262D9-4846-2809-9182-3B60229B244B" value="true"/>
@@ -80,7 +82,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>7</dataTypePrecision>
-<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
