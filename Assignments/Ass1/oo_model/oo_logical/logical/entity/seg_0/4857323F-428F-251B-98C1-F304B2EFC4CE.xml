@@ -75,5 +75,36 @@
 <dataTypeSize>20</dataTypeSize>
 <ownDataTypeParameters>20,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="pass_id" id="4FFA54D3-28E5-0308-A09A-62C0F0C79494">
+<createdBy>Johan</createdBy>
+<createdTime>2025-05-01 19:23:53 UTC</createdTime>
+<comment><![CDATA[Identifier for each passenger]]></comment>
+<commentInRDBMS><![CDATA[Identifier for each passenger]]></commentInRDBMS>
+<generatorID>BB5A5F0A-8CDD-86B9-5024-FF04C98D7D87</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="987262D9-4846-2809-9182-3B60229B244B" value="true"/>
+</engineerTo>
+<referedAttribute>9C19C6F2-D205-198B-7081-E78EF54957DC</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="21C068ED-C78B-A480-C42A-D5BFB3C6220C" name="ADDRESS PK">
+<createdBy>Johan</createdBy>
+<createdTime>2025-05-01 19:24:37 UTC</createdTime>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="987262D9-4846-2809-9182-3B60229B244B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>4FFA54D3-28E5-0308-A09A-62C0F0C79494</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
 </Entity>

@@ -29,5 +29,84 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="cab_no" id="B5A88AB3-AC39-D9C0-3D9E-1FD640D83E4D">
+<createdBy>Johan</createdBy>
+<createdTime>2025-05-01 19:06:52 UTC</createdTime>
+<comment><![CDATA[Number assigned to cabin]]></comment>
+<commentInRDBMS><![CDATA[Number assigned to cabin]]></commentInRDBMS>
+<generatorID>FE05E859-DA72-772D-C7A2-0FEA44229E59</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="987262D9-4846-2809-9182-3B60229B244B" value="true"/>
+</engineerTo>
+<referedAttribute>C2F79A07-C637-C7DB-8A8B-BAFEF414793D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ship_code" id="48B8FCA0-5249-29CB-90AA-454D4259BD20">
+<createdBy>Johan</createdBy>
+<createdTime>2025-05-01 19:06:52 UTC</createdTime>
+<comment><![CDATA[Unique Identifier for ship]]></comment>
+<commentInRDBMS><![CDATA[Unique Identifier for ship]]></commentInRDBMS>
+<generatorID>FE05E859-DA72-772D-C7A2-0FEA44229E59</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="987262D9-4846-2809-9182-3B60229B244B" value="true"/>
+</engineerTo>
+<referedAttribute>3318223E-EE4C-1AC6-C1EE-CBF315CA7FB6</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cruise_id" id="DD19741A-1393-BA6E-403C-89CEDF717FD3">
+<createdBy>Johan</createdBy>
+<createdTime>2025-05-01 19:12:39 UTC</createdTime>
+<comment><![CDATA[Unique identifier for all different types of cruises]]></comment>
+<commentInRDBMS><![CDATA[Unique identifier for all different types of cruises]]></commentInRDBMS>
+<generatorID>912CD3F5-5274-193D-9A50-D98E55AC2B41</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="987262D9-4846-2809-9182-3B60229B244B" value="true"/>
+</engineerTo>
+<referedAttribute>B61C13B7-6F3F-5C69-3365-045957C05980</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pass_id" id="807386AA-01D1-ED76-2F77-9B3A6E593F11">
+<createdBy>Johan</createdBy>
+<createdTime>2025-05-01 19:13:47 UTC</createdTime>
+<comment><![CDATA[Identifier for each passenger]]></comment>
+<commentInRDBMS><![CDATA[Identifier for each passenger]]></commentInRDBMS>
+<generatorID>9A8D208C-877A-33EB-FA7F-0D1B3A1D34A1</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="987262D9-4846-2809-9182-3B60229B244B" value="true"/>
+</engineerTo>
+<referedAttribute>9C19C6F2-D205-198B-7081-E78EF54957DC</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="5D9D9F31-5CDB-A3EB-8F3A-348543D03D3C" name="MANIFEST PK">
+<createdBy>Johan</createdBy>
+<createdTime>2025-05-01 18:49:13 UTC</createdTime>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="987262D9-4846-2809-9182-3B60229B244B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+</identifier>
+</identifiers>
 </Entity>

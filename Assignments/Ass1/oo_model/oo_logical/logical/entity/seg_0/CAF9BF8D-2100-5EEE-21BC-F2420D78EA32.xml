@@ -96,11 +96,43 @@
 <engineerTo>
 <item key="987262D9-4846-2809-9182-3B60229B244B" value="true"/>
 </engineerTo>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>10</dataTypePrecision>
 <ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="minor_status" id="7EA546F6-8EBF-72DA-4FE5-CA6A4F0F91A3">
+<createdBy>Johan</createdBy>
+<createdTime>2025-05-01 19:20:35 UTC</createdTime>
+<comment><![CDATA[Status of which the character is a minor or not]]></comment>
+<commentInRDBMS><![CDATA[Status of which the character is a minor or not]]></commentInRDBMS>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="987262D9-4846-2809-9182-3B60229B244B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3 CHAR</dataTypeSize>
+<ownDataTypeParameters>3 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="guardian_id" id="1757BA4A-61DE-464A-AEAE-34C23759179F">
+<createdBy>Johan</createdBy>
+<createdTime>2025-05-01 19:21:24 UTC</createdTime>
+<comment><![CDATA[Guardian ID (should the passenger be a minor)]]></comment>
+<commentInRDBMS><![CDATA[Guardian ID (should the passenger be a minor)]]></commentInRDBMS>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="987262D9-4846-2809-9182-3B60229B244B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
