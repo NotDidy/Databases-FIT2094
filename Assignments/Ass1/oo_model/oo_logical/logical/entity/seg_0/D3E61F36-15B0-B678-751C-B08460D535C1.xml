@@ -93,7 +93,7 @@
 <createdBy>Johan</createdBy>
 <createdTime>2025-05-01 17:57:21 UTC</createdTime>
 <comment><![CDATA[The country the ship is registered to]]></comment>
-<commentInRDBMS><![CDATA[The country the ship is registered to]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[The country the ship is registered to.]]></commentInRDBMS>
 <ownerDesignName>oo_logical</ownerDesignName>
 <engineerTo>
 <item key="987262D9-4846-2809-9182-3B60229B244B" value="true"/>
