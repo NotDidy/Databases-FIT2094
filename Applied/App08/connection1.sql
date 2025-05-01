@@ -1,0 +1,16 @@
+DROP TABLE custbalance cascade CONSTRAINTS;
+CREATE TABLE custbalance (cust_id NUMBER(4), cust_bal NUMBER(4));
+
+INSERT INTO custbalance VALUES (1, 100);
+INSERT INTO custbalance VALUES (2, 200);
+
+SELECT * FROM custbalance;
+COMMIT;
+UPDATE CUSTBALANCE SET CUST_BAL = 110 WHERE CUST_ID = 1;
+SELECT * FROM custbalance WHERE cust_id = 1;
+COMMIT;
+
+UPDATE CUSTBALANCE SET CUST_BAL = 150 WHERE CUST_ID = 2;
+
+
+
