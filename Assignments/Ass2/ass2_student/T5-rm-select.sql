@@ -1,8 +1,8 @@
 /*****PLEASE ENTER YOUR DETAILS BELOW*****/
 --T5-rm-select.sql
 
---Student ID:
---Student Name:
+--Student ID: 33523061
+--Student Name: MUHAMMAD JOHAN ARIEF BIN MULIADEE
 
 
 /* Comments for your marker:
