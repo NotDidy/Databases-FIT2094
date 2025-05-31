@@ -28,8 +28,8 @@ DROP TABLE team CASCADE CONSTRAINTS PURGE;
 -- COMPETITOR
 CREATE TABLE competitor (
     comp_no NUMBER(5) PRIMARY KEY,
-    comp_fname VARCHAR2(30) ,
-    comp_lname VARCHAR2(30) ,
+    comp_fname VARCHAR2(30),
+    comp_lname VARCHAR2(30),
     comp_gender CHAR(1) CHECK (comp_gender IN ('M', 'F', 'U')),
     comp_dob DATE NOT NULL,
     comp_email VARCHAR2(50) UNIQUE NOT NULL,
@@ -49,7 +49,24 @@ COMMENT ON COLUMN COMPETITOR.comp_phone IS 'Competitor''s phone number - unique 
 
 
 --ENTRY
+CREATE TABLE ENTRY (
+    entry_no NUMBER(5),
+    event_id NUMBER(6) NOT NULL,
+    comp_no NUMBER(5) NOT NULL,
+    entry_starttime DATE,
+    entry_finishtime DATE,
+    entry_elapsedtime DATE,
+    PRIMARY KEY (entry_no, event_id),
+    FOREIGN KEY (event_id) REFERENCES EVENT(event_id),
+    FOREIGN KEY (comp_no) REFERENCES COMPETITOR(comp_no)
+);
 
+COMMENT ON COLUMN ENTRY.entry_no IS 'Entry number (unique only within an event)';
+COMMENT ON COLUMN ENTRY.event_id IS 'ID of the event the entry is for';
+COMMENT ON COLUMN ENTRY.comp_no IS 'Competitor''s ID entering the event';
+COMMENT ON COLUMN ENTRY.entry_starttime IS 'Entrant''s start time (hh24:mi:ss)';
+COMMENT ON COLUMN ENTRY.entry_finishtime IS 'Entrant''s finish time (hh24:mi:ss)';
+COMMENT ON COLUMN ENTRY.entry_elapsedtime IS 'Elapsed time to complete the event (hh24:mi:ss)';
 
 
 --TEAM
