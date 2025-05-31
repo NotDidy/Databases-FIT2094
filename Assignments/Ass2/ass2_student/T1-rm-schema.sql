@@ -26,7 +26,7 @@ DROP TABLE team CASCADE CONSTRAINTS PURGE;
 -- FK constraints are to be added at the end of this script
 
 -- COMPETITOR
-CREATE TABLE competitor (
+CREATE TABLE COMPETITOR (
     comp_no NUMBER(5) PRIMARY KEY,
     comp_fname VARCHAR2(30),
     comp_lname VARCHAR2(30),
@@ -52,13 +52,14 @@ COMMENT ON COLUMN COMPETITOR.comp_phone IS 'Competitor''s phone number - unique 
 CREATE TABLE ENTRY (
     entry_no NUMBER(5),
     event_id NUMBER(6) NOT NULL,
-    comp_no NUMBER(5) NOT NULL,
     entry_starttime DATE,
     entry_finishtime DATE,
     entry_elapsedtime DATE,
-    PRIMARY KEY (entry_no, event_id),
-    FOREIGN KEY (event_id) REFERENCES EVENT(event_id),
-    FOREIGN KEY (comp_no) REFERENCES COMPETITOR(comp_no)
+    comp_no NUMBER(5) NOT NULL,
+    team_id NUMBER(3),
+    char_id NUMBER(3),
+    PRIMARY KEY (entry_no, event_id)
+    
 );
 
 COMMENT ON COLUMN ENTRY.entry_no IS 'Entry number (unique only within an event)';
@@ -70,7 +71,47 @@ COMMENT ON COLUMN ENTRY.entry_elapsedtime IS 'Elapsed time to complete the event
 
 
 --TEAM
+CREATE TABLE TEAM (
+    team_id NUMBER(3) PRIMARY KEY,
+    team_name VARCHAR2(30) NOT NULL,
+    carn_date DATE UNIQUE NOT NULL,
+    event_id NUMBER(6) NOT NULL,
+    entry_no NUMBER(5) NOT NULL
+);
+
+COMMENT ON COLUMN TEAM.team_id IS 'Team identifier (unique)';
+COMMENT ON COLUMN TEAM.team_name IS 'Team name';
+COMMENT ON COLUMN TEAM.carnival_id IS 'ID of the carnival the team is in';
+COMMENT ON COLUMN TEAM.team_leader_comp_no IS 'Competitor number of the team leader';
 
 
 
 -- Add all missing FK Constraints below here
+
+-- ENTRY Table Foreign Keys
+ALTER TABLE ENTRY 
+    ADD CONSTRAINT fk_entry_comp
+        FOREIGN KEY (comp_no) REFERENCES COMPETITOR(comp_no);
+
+ALTER TABLE ENTRY
+    ADD CONSTRAINT fk_entry_event
+        FOREIGN KEY (event_id) REFERENCES EVENT(event_id);
+
+ALTER TABLE ENTRY
+    ADD CONSTRAINT fk_entry_team
+        FOREIGN KEY (team_id) REFERENCES TEAM(team_id);
+
+ALTER TABLE ENTRY
+    ADD CONSTRAINT fk_entry_charity
+        FOREIGN KEY (char_id) REFERENCES CHARITY(char_id);
+
+-- TEAM Table Foreign Keys
+ALTER TABLE TEAM 
+    ADD CONSTRAINT fk_team_carnival
+        FOREIGN KEY (carn_date) REFERENCES CARNIVAL(carn_date);
+ALTER TABLE TEAM
+    ADD CONSTRAINT fk_team_event
+        FOREIGN KEY (event_id) REFERENCES EVENT(event_id);
+ALTER TABLE TEAM
+    ADD CONSTRAINT fk_team_entry
+        FOREIGN KEY (entry_no) REFERENCES ENTRY(entry_no);
