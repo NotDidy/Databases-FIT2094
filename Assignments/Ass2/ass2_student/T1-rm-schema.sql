@@ -92,7 +92,7 @@ COMMENT ON COLUMN TEAM.event_id IS 'Event id (surrogate primary key)';
 COMMENT ON COLUMN TEAM.entry_no IS 'Entry number (unique only within an event)';
 
 ALTER TABLE TEAM ADD CONSTRAINT team_pk PRIMARY KEY (team_id);
-ALTER TABLE TEAM ADD CONSTRAINT team_name_uq UNIQUE (team_name);
+ALTER TABLE TEAM ADD CONSTRAINT team_name_uq UNIQUE (team_name, carn_date);
 
 
 -- Add all missing FK Constraints below here
@@ -118,9 +118,6 @@ ALTER TABLE ENTRY
     ADD CONSTRAINT fk_entry_event
         FOREIGN KEY (event_id) REFERENCES EVENT(event_id);
 
-ALTER TABLE ENTRY
-    ADD CONSTRAINT fk_entry_team
-        FOREIGN KEY (team_id) REFERENCES TEAM(team_id);
 
 ALTER TABLE ENTRY
     ADD CONSTRAINT fk_entry_charity
