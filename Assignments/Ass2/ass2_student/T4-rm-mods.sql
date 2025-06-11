@@ -31,7 +31,7 @@ SELECT comp_no, comp_fname, comp_lname, comp_completed_events
 
 -- b)
 
--- Drop table statements (debugging)
+-- Drop table statement
 DROP TABLE ENTRY_CHARITY CASCADE CONSTRAINTS PURGE;
 
 -- Created new table for entry-charity allocations

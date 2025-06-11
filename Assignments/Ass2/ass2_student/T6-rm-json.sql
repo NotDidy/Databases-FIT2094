@@ -26,22 +26,24 @@ SELECT
     'carn_name'         VALUE c.carn_name,
     'carn_date'         VALUE TO_CHAR(c.carn_date,'DD/MON/YYYY'),
     'team_name'         VALUE t.team_name,
-    'team_leader'       VALUE JSON_OBJECT(
-                            'name'  VALUE leader.comp_fname || ' ' || leader.comp_lname,
-                            'phone' VALUE leader.comp_phone,
-                            'email' VALUE leader.comp_email
-                          ),
-    'team_members'      VALUE JSON_ARRAYAGG(
-                            JSON_OBJECT(
-                              'competitor_name'  VALUE mem.comp_fname || ' ' || mem.comp_lname,
-                              'competitor_phone' VALUE mem.comp_phone,
-                              'event_type'       VALUE et.eventtype_desc,
-                              'entry_no'         VALUE m.entry_no,
-                              'starttime'        VALUE NVL(TO_CHAR(m.entry_starttime,'HH24:MI:SS'),'-'),
-                              'finishtime'       VALUE NVL(TO_CHAR(m.entry_finishtime,'HH24:MI:SS'),'-'),
-                              'elapsedtime'      VALUE NVL(TO_CHAR(m.entry_elapsedtime,'HH24:MI:SS'),'-')
-                            ) ORDER BY m.entry_no
-                          )
+    'team_leader'       
+    VALUE JSON_OBJECT(
+            'name'  VALUE leader.comp_fname || ' ' || leader.comp_lname,
+            'phone' VALUE leader.comp_phone,
+            'email' VALUE leader.comp_email
+            ),
+    'team_members'      
+    VALUE JSON_ARRAYAGG(
+        JSON_OBJECT(
+            'competitor_name'  VALUE mem.comp_fname || ' ' || mem.comp_lname,
+            'competitor_phone' VALUE mem.comp_phone,
+            'event_type'       VALUE et.eventtype_desc,
+            'entry_no'         VALUE m.entry_no,
+            'starttime'        VALUE NVL(TO_CHAR(m.entry_starttime,'HH24:MI:SS'),'-'),
+            'finishtime'       VALUE NVL(TO_CHAR(m.entry_finishtime,'HH24:MI:SS'),'-'),
+            'elapsedtime'      VALUE NVL(TO_CHAR(m.entry_elapsedtime,'HH24:MI:SS'),'-')
+        ) ORDER BY m.entry_no
+        )
   ) AS team_json
 FROM team t
 JOIN carnival c
