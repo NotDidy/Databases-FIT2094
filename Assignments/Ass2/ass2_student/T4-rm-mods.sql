@@ -59,3 +59,26 @@ COMMENT ON COLUMN ENTRY_CHARITY.char_id IS
 COMMENT ON COLUMN ENTRY_CHARITY.percentage IS
   'Percentage of funds allocated to the charity';
 
+-- Migrated existing single-charity data into new table 
+INSERT INTO ENTRY_CHARITY (event_id, entry_no, char_id, percentage)
+  SELECT event_id, entry_no, char_id, 100
+    FROM ENTRY
+   WHERE char_id IS NOT NULL;
+COMMIT;
+
+-- Remove old single-charity column
+ALTER TABLE ENTRY
+  DROP COLUMN char_id;
+COMMIT;
+
+-- Show structure of new table and migrated data
+DESC ENTRY_CHARITY;
+SELECT *
+  FROM ENTRY_CHARITY
+ ORDER BY event_id, entry_no, char_id;
+
+DESC ENTRY;
+SELECT *
+  FROM ENTRY
+ ORDER BY entry_no, event_id;
+
