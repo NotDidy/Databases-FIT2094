@@ -13,7 +13,7 @@
 // Use (connect to) your database - you MUST update xyz001
 // with your authcate username
 
-use("xyz001");
+use("mmul0019");
 
 // (b)
 // PLEASE PLACE REQUIRED MONGODB COMMAND TO CREATE THE COLLECTION HERE
