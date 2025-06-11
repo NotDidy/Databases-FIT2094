@@ -34,7 +34,7 @@ INSERT INTO COMPETITOR VALUES (13, 'Michael', 'Rahman', 'U', TO_DATE('03/MAR/199
 INSERT INTO COMPETITOR VALUES (14, 'Nadia', 'Lopez', 'F', TO_DATE('20/FEB/2002','DD/MON/YYYY'), 'nadia@gmail.com', 'N', '0411111124');
 INSERT INTO COMPETITOR VALUES (15, 'Oscar', 'Teo', 'M', TO_DATE('21/JAN/1991','DD/MON/YYYY'), 'oscar@monash.edu', 'Y', '0411111125');
 
-
+COMMIT;
 -- =======================================
 -- ENTRY
 -- =======================================
@@ -71,6 +71,8 @@ INSERT INTO ENTRY VALUES (6, 6, TO_DATE('14:00:00','HH24:MI:SS'), TO_DATE('14:40
 INSERT INTO ENTRY VALUES (5, 3, TO_DATE('14:00:00','HH24:MI:SS'), TO_DATE('14:42:00','HH24:MI:SS'), TO_DATE('00:42:00','HH24:MI:SS'), 6, NULL, NULL);
 INSERT INTO ENTRY VALUES (6, 5, TO_DATE('15:00:00','HH24:MI:SS'), TO_DATE('15:45:00','HH24:MI:SS'), TO_DATE('00:45:00','HH24:MI:SS'), 7, NULL, NULL);
 
+
+COMMIT;
 -- =======================================
 -- TEAM
 -- =======================================
@@ -87,3 +89,5 @@ INSERT INTO TEAM VALUES (4, 'BoltSquad', TO_DATE('15/MAR/2025','DD/MON/YYYY'), 5
 
 -- Team 4: 1 member
 INSERT INTO TEAM VALUES (5, 'NightCheetahs', TO_DATE('29/JUN/2025','DD/MON/YYYY'), 6, 4);
+
+COMMIT;
