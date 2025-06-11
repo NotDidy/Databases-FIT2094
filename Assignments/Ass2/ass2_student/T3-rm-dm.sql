@@ -25,7 +25,7 @@ CREATE SEQUENCE team_seq
    ========================================================== */
 SET TRANSACTION READ WRITE;
 
--- 1) Insert two new competitors
+-- Insert two new competitors
 INSERT INTO COMPETITOR
   (comp_no, comp_fname, comp_lname, comp_gender, comp_dob, comp_email, comp_unistatus, comp_phone)
 VALUES
@@ -36,7 +36,7 @@ INSERT INTO COMPETITOR
 VALUES
   (competitor_seq.NEXTVAL, 'Jackson','Bull', 'M', TO_DATE('15/MAR/1992','DD/MON/YYYY'), 'jackson.bull@monash.edu','Y', '0422412524');
 
--- 2) Register both in the 10 Km Run of RM Winter Series Caulfield 2025
+-- Register both in the 10 Km Run of RM Winter Series Caulfield 2025
 INSERT INTO ENTRY
   (event_id, entry_no, entry_starttime, entry_finishtime, entry_elapsedtime, comp_no, team_id, char_id)
 VALUES
@@ -99,7 +99,7 @@ VALUES
     (SELECT char_id FROM CHARITY WHERE char_name = 'RSPCA')
   );
 
--- 3) Create the new team "Super Runners" (Keith as leader)
+-- Create the new team "Super Runners" 
 INSERT INTO TEAM
   (team_id, team_name, carn_date, event_id, entry_no)
 VALUES
@@ -126,7 +126,7 @@ VALUES
     )
   );
 
--- 4) Assign Jackson’s entry to that team
+-- Assign Jackson’s entry to that team
 UPDATE ENTRY
    SET team_id = (
      SELECT team_id
@@ -168,7 +168,6 @@ UPDATE ENTRY
 
 COMMIT;
 
--- Error Here -- 
 /* ==========================================================
    Task 3(c): Jackson downgrades to 5 Km Run & new charity
    ========================================================== */
@@ -196,11 +195,11 @@ UPDATE ENTRY
 
 COMMIT;
 
-/* =============================================================
-   Task 3(d): Keith withdraws → delete entry, disband team, Jackson solo
-   ============================================================= */
+/* ===============================================================================
+   Task 3(d): Keith withdraws --> delete entry, disband team, Jackson continues solo
+   =============================================================================== */
 
--- 2) Delete the Super Runners team
+-- Delete the Super Runners team
 DELETE FROM TEAM
  WHERE team_name = 'Super Runners'
    AND carn_date = (
@@ -208,7 +207,7 @@ DELETE FROM TEAM
    );
 
 
--- 1) Remove Keith’s entry
+-- Remove Keith’s entry
 DELETE FROM ENTRY
  WHERE comp_no = (SELECT comp_no FROM COMPETITOR WHERE comp_phone = '0422141112')
    AND event_id IN (
@@ -220,7 +219,7 @@ DELETE FROM ENTRY
 
 
 
--- 3) Unassign Jackson (continuing solo)
+-- Unassign Jackson from team 
 UPDATE ENTRY
    SET team_id = NULL
  WHERE comp_no = (SELECT comp_no FROM COMPETITOR WHERE comp_phone = '0422412524')
