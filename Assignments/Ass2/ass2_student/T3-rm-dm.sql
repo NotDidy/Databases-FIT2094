@@ -3,9 +3,8 @@
 -- Student ID: 33523061
 -- Student Name: MUHAMMAD JOHAN ARIEF BIN MULIADEE
 
-/* =============================
-   Task 3(a): Create sequences
-   ============================= */
+-- 3a)
+
 -- Remove existing sequences (if any)
 DROP SEQUENCE competitor_seq;
 DROP SEQUENCE team_seq;
@@ -20,9 +19,8 @@ CREATE SEQUENCE team_seq
   START WITH 100
   INCREMENT BY 5;
 
-/* ==========================================================
-   Task 3(b): Add Keith Rose & Jackson Bull, register and team
-   ========================================================== */
+-- 3b)
+
 SET TRANSACTION READ WRITE;
 
 -- Insert two new competitors
@@ -168,9 +166,8 @@ UPDATE ENTRY
 
 COMMIT;
 
-/* ==========================================================
-   Task 3(c): Jackson downgrades to 5 Km Run & new charity
-   ========================================================== */
+-- 3c)
+
 UPDATE ENTRY
    SET event_id = (
      SELECT e.event_id
@@ -195,9 +192,7 @@ UPDATE ENTRY
 
 COMMIT;
 
-/* ===============================================================================
-   Task 3(d): Keith withdraws --> delete entry, disband team, Jackson continues solo
-   =============================================================================== */
+-- 3)d)
 
 -- Delete the Super Runners team
 DELETE FROM TEAM

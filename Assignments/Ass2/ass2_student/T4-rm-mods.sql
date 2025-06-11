@@ -5,15 +5,15 @@
 
 -- a)
 
--- Add new column to COMPETITOR
+-- Added new column to COMPETITOR
 ALTER TABLE COMPETITOR
   ADD comp_completed_events NUMBER(3);
 
--- Comment on new column
+-- Commented on new column
 COMMENT ON COLUMN COMPETITOR.comp_completed_events IS
   'Number of completed events by competitor';
 
--- Populate new column based on existing data
+-- Populated new column based on existing data
 UPDATE COMPETITOR c
    SET comp_completed_events = (
      SELECT COUNT(*)
@@ -23,9 +23,39 @@ UPDATE COMPETITOR c
    );
 COMMIT;
 
--- Show structural change and sample data update
+-- Structural change and sample data update
 DESC COMPETITOR;
 SELECT comp_no, comp_fname, comp_lname, comp_completed_events
   FROM COMPETITOR
  ORDER BY comp_no;
+
+-- b)
+
+-- Drop table statements (debugging)
+DROP TABLE ENTRY_CHARITY CASCADE CONSTRAINTS PURGE;
+
+-- Created new table for entry-charity allocations
+CREATE TABLE ENTRY_CHARITY (
+    event_id   NUMBER(6) NOT NULL,
+    entry_no   NUMBER(5) NOT NULL,
+    char_id    NUMBER(3) NOT NULL,
+    percentage NUMBER(3) NOT NULL CHECK (percentage BETWEEN 0 AND 100),
+
+    -- Constraint declaration
+    CONSTRAINT pk_entry_charity PRIMARY KEY (event_id, entry_no, char_id),
+    CONSTRAINT fk_ec_entry FOREIGN KEY (event_id, entry_no)
+      REFERENCES ENTRY (event_id, entry_no),
+    CONSTRAINT fk_ec_charity FOREIGN KEY (char_id)
+      REFERENCES CHARITY (char_id)
+);
+
+-- Commented on new table columns
+COMMENT ON COLUMN ENTRY_CHARITY.event_id IS
+  'Event ID for the entry allocation';
+COMMENT ON COLUMN ENTRY_CHARITY.entry_no IS
+  'Entry number for the event allocation';
+COMMENT ON COLUMN ENTRY_CHARITY.char_id IS
+  'Charity supported by the entry';
+COMMENT ON COLUMN ENTRY_CHARITY.percentage IS
+  'Percentage of funds allocated to the charity';
 
