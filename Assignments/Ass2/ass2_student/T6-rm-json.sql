@@ -15,6 +15,7 @@
 
 
 
+
 -- PLEASE PLACE REQUIRED SQL SELECT STATEMENT FOR THIS PART HERE
 -- ENSURE that your query is formatted and has a semicolon
 -- (;) at the end of this answer
@@ -23,7 +24,7 @@ SELECT
   JSON_OBJECT(
     '_id'               VALUE t.team_id,
     'carn_name'         VALUE c.carn_name,
-    'carn_date'         VALUE TO_CHAR(c.carn_date,'DD-Mon-YYYY'),
+    'carn_date'         VALUE TO_CHAR(c.carn_date,'DD/MON/YYYY'),
     'team_name'         VALUE t.team_name,
     'team_leader'       VALUE JSON_OBJECT(
                             'name'  VALUE leader.comp_fname || ' ' || leader.comp_lname,
